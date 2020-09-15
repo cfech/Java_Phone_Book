@@ -28,6 +28,9 @@ public class Phone {
         if(foundPosition <0){
             System.out.println("Contact not found");
             return false;
+        } else if(findContact(newContact.getName()) != -1){
+            System.out.println("Contact with name " + newContact.getName() + " already exists. Update failed");
+            return false;
         }
 
         this.myContacts.set(foundPosition, newContact);
