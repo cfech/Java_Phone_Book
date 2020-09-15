@@ -1,7 +1,7 @@
 package com.classes;
 
 import java.util.ArrayList;
-import java.util.Collection;
+
 
 public class Phone {
     private String phoneNumber;
@@ -9,7 +9,7 @@ public class Phone {
 
     public Phone(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-        this.myContacts = new ArrayList<Contact>();
+        this.myContacts = new ArrayList<>();
     }
 
     public boolean addNewContact(Contact contact) {
